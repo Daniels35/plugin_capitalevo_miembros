@@ -1,0 +1,120 @@
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.team-section h3 {
+    color: #0B1A35;
+}
+
+.team-member {
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #F8F8F8;
+}
+
+.team-member p {
+    color: #555;
+}
+
+.team-member img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30px;
+    max-width: 100%;
+}
+
+.email-members {
+    margin-top: -10px;
+}
+
+.ds-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ds-modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    color: #0B1A35;
+    text-align: center;
+}
+
+.ds-close {
+    color: #0B1A35;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.ds-close:hover,
+.ds-close:focus {
+    color: #0B1A35;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ds-container-typed {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    min-height: 100px;
+    max-width: 800px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#ds-typed {
+    flex: 1;
+    font-size: 1.2em;
+    text-align: left;
+    opacity: 0.8;
+}
+
+.typed-cursor {
+    font-size: 1.2em;
+    color: #555;
+    margin-left: 2px; 
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .ds-modal-content h2 {
+        font-size: 25px;
+    }
+
+    .ds-modal-content {
+        width: 85%;
+    }
+}
